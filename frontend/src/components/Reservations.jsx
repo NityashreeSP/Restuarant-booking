@@ -29,7 +29,7 @@ const Reservations = () => {
 
     try {
       const { data } = await axios.post(
-        'http://localhost:4000/api/v1/reservation/send',
+        'https://restuarant-booking-backend.onrender.com',
         {
           firstName,
           lastName,
