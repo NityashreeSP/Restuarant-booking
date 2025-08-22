@@ -29,7 +29,7 @@ const Reservations = () => {
 
     try {
       const { data } = await axios.post(
-        'https://restuarant-booking-backend.onrender.com',
+        "https://restuarant-booking-backend.onrender.com/api/v1/reservation",
         {
           firstName,
           lastName,
