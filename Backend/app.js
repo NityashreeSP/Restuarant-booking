@@ -15,6 +15,10 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
+app.get("/", (req, res) => {
+  res.json({ message: "Backend running..." });
+});
+
 
 // ✅ Handle preflight requests
 app.options('*', cors());
